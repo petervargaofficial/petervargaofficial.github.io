@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <head>
   <title>Peter's Web</title>  
-  <script src="/assets/jquery.js"></script>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="bjqs.min.js"></script>
+  <link type="text/css" rel="Stylesheet" href="bjqs.css" />
+
   <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,24 +19,21 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
   </header>
-  <div class="first">
-    <p>Business background <span class="price">!22</span><br />
-    <small> asdfasd</small></p>
-  </div>
 
-  <div class="second">
-    <p>pastrami boudin tongue <span class="price">$22</span><br />
-    <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
-  </div>
-    
-  <div class="dessert">
-    <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
-    <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+  <div id="my-slideshow">
+    <ul class="bjqs">
+        <li><img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px></li>
+        <li><img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px></li>
+    </ul>
   </div>
 
   <script>
-    $('div').on('click', function() {
-        $(this).toggleClass('show-description');
+    jQuery(document).ready(function($) {
+    $('#my-slideshow').bjqs({
+        'height' : 320,
+        'width' : 620,
+        'responsive' : true
+    });
     });
   </script>
 
