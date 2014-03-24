@@ -12,7 +12,7 @@
 
 <body>
   <header>
-  <img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px>
+  <img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px style="margin-top:20px">
   <h1>About Me</h1>
   <ul>
     <li><a href="index.html">About Me</a></li>
@@ -20,17 +20,22 @@
   </ul>
   </header>
 
+  <p>
+    Welocome to my website :) more about you, your experience
+  </p>
+
+
   <div id="my-slideshow">
     <ul class="bjqs">
-        <li><img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px></li>
-        <li><img src="http://i.imgur.com/3Bzibvi.jpg" height = 150px></li>
+        <li><img src="http://i.imgur.com/3Bzibvi.jpg"></li>
+        <li><img src="http://www.thesearchagents.com/wp-content/uploads/2013/11/Google-Search.jpg"></li>
     </ul>
   </div>
 
   <script>
     jQuery(document).ready(function($) {
     $('#my-slideshow').bjqs({
-        'height' : 320,
+        'height' : 420,
         'width' : 620,
         'responsive' : true
     });
